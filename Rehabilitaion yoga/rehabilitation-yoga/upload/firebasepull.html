@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>getData</title>
+
+</head>
+<body>
+    
+
+
+
+
+
+    <button onclick="saveData()">Save Data></button>
+    <button onclick="printData()">Print Data</button>
+    <script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+    <script src="https://cdn.firebase.com/js/client/2.4.2/firebase.js"></script>
+    <script >
+        var ref = new Firebase("https://myascdatabase-28480.firebaseio.com");
+        function saveData(){
+            var usersRef = ref.child("users");
+            usersRef.set({
+              alanisawesome: {
+                date_of_birth: "June 23, 1912",
+                full_name: "Alan Turing"
+              },
+              gracehop: {
+                date_of_birth: "December 9, 1906",
+                full_name: "Grace Hopper"
+              }
+            });
+        }
+        function printData(){
+            ref.on("value", function(snapshot) {
+          
+          
+
+            
+            var another = window.prompt("Who are you looking for?")
+            var userVariable = window.prompt("What about them?")
+          
+        
+            var y = document.createTextNode(snapshot.val().users[another]]userVariable)
+            document.body.appendChild(y);
+        }, function (errorObject) {
+          console.log("The read failed: " + errorObject.code);
+        });
+        }
+    </script>
+
+</body>
+</html>

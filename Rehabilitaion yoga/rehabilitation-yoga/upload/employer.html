@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<!-- Website template by freewebsitetemplates.com -->
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="user-scalable=0, width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>Employee- NGC</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/mobile.css">
+	<script type='text/javascript' src='js/mobile.js'></script>
+</head>
+<body>
+	<script src="j.js"></script>
+
+	<div id="header">
+		<h1><a href="index.html"> Next Generation Employment<span>Your ever expanding network</span></a></h1>
+		<h1><input placeholder="Search Profile"></h1>
+		<ul id="navigation">
+			<li>
+				<a href="index.html">Home</a>
+			</li>
+			<li class="current">
+				<a href="employee.html">Employee</a>
+			</li>
+			<li>
+				<a href="employer.html">Employer</a>
+				<ul>
+					<li>
+						<a href="instructors.html">Developers</a>
+					</li>
+				</ul>
+			</li>
+			<li>
+				<a href="contact.html">Contact</a>
+			</li>
+			<li>
+				<a href="search.html">Search</a>
+			</li>
+		</ul>
+	</div>
+			<div id="body">
+		<h2>Employer Signup</h2>
+		<div class="content">
+			<div>
+				<div class="section">
+				<h3> Upload a picture of your Restaurant</h3>
+				<head>
+				<link class="jsbin" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1/themes/base/jquery-ui.css" rel="stylesheet" type="text/css" />
+				<script class="jsbin" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+				<script class="jsbin" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.0/jquery-ui.min.js"></script>
+				<meta charset=utf-8 />
+				<title>JS Bin</title>
+				<!--[if IE]>
+				  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+				<![endif]-->
+				<style>
+				  article, aside, figure, footer, header, hgroup, 
+				  menu, nav, section { display: block; }
+				</style>
+				</head>
+				<body>
+				  <input type='file' onchange="readURL(this);" />
+				    <img id="blah" src="#" alt="your image" />
+				</body>
+
+			</body>
+					<h3>Name of Establishment</h3>
+					<p>
+						<input type='text' id='nestablishment'>
+					</p>
+					<span></span>
+					<span></span>
+				</div>
+				<div class="section">
+					<h3>Owner of Establishment</h3>
+					<p>
+						<input type='text' id='establishment'>
+					</p>
+					<span></span>
+					<span></span>
+				</div>
+				<div class="section">
+					<h3>Hours of Operation</h3>
+					<p>
+					<input placeholder="Monday:Hours" type='text' id='mhours'>
+					</p>
+					<p>
+					<input placeholder="Tuesday:Hours" type='text' id='thours'>
+					</p>
+					<p>
+					<input placeholder="Wednesday:Hours" type='text' id ='whours'>
+					</p>
+					<p>
+					<input placeholder="Thursday:Hours" type='text' id='thhours'>
+					</p>
+					<p>
+					<input placeholder="Friday:Hours" type='text' id='fhours'>
+					</p>
+					<p>
+					<input placeholder="Saturday:Hours" type='text' id='shours'>
+					</p>
+					<p>
+					<input placeholder="Sunday:Hours" type='text' id='suhours'>					
+					</p>
+
+					<script src="j.js"></script>
+					<h3>Location of Restaurant</h3>
+					<input placeholder="Street, City State ZIP
+					" type=text id="location"></input> 
+					<h3> Please Upload a picutre of Authenticty</h3>
+						<p>*Preferably, Restaurant License</p>
+						<h3><link class="jsbin" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1/themes/base/jquery-ui.css" rel="stylesheet" type="text/css" />
+				<script class="jsbin" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+				<script class="jsbin" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.0/jquery-ui.min.js"></script>
+				<meta charset=utf-8 />
+				<title>JS Bin</title>
+				<!--[if IE]>
+				  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+				<![endif]-->
+				<style>
+				  article, aside, figure, footer, header, hgroup, 
+				  menu, nav, section { display: block; }
+				</style>
+				</head>
+				 <input type='file' onchange="readURL(this);" />
+				    <img id="blah" src="#" alt="your image" />
+				    </h3>
+				<h3> What are you looking for ?</h3>
+				<form action="action_page.php">
+				  <input list="Specialties" name="Specialty" type=text id="specialties">
+				  <datalist id="specialties">
+				    <option value="Waiter">
+				    <option value="Chef">
+				    <option value="Cashier/Host">
+				    <option value="Busboy">
+				    <option value="Dishwasher">
+				  </datalist>
+				  </form>
+				  <h3> What services do you offer?</h3>
+				  <form action="action_page.php">
+				  <input list="Services" name="Service" type=text id="service">
+				  <datalist id="Services">
+				    <option value="Catering">
+				    <option value="Delivery">
+				    <option value="Pickup">
+				    <option value="Host Benefits/Function">
+				    <option value="Private Chefs">
+				  </datalist>
+				  </form>
+				  <h3>Contact Info</h3>
+				  <input placeholder="Email" type=text id="email">
+				  <p><input placeholder="Phone Number" type=text id="pnumber"></p>
+
+				 <button onclick='sendMessage()' id='js'>Save Profile</button>
+			    <!-- Empty div where the messages will show up -->
+			    <div id='messageBoard'></div>
+				  <form action="congrats2.html">
+				    <input type="submit" value="Continue" />
+				</form>
+
+
+				</body>
+				
+				</div>
+			
+			</div>
+
+	<script src="https://www.gstatic.com/firebasejs/3.2.1/firebase.js"></script>
+
+		<script>
+		  // Initialize Firebase
+		  var config = {
+		    apiKey: "AIzaSyDJpWaKhrlWGXgVPI7aAmaFYYTSxAAtPVw",
+		    authDomain: "myascdatabase-28480.firebaseapp.com",
+		    databaseURL: "https://myascdatabase-28480.firebaseio.com",
+		    storageBucket: "myascdatabase-28480.appspot.com",
+		  };
+		  firebase.initializeApp(config);
+		</script>
+		<script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+	    <!-- script we'll make dynamic changes with. You'll have to create this file -->
+	    <script src='firebasemployer.js'></script>
+
+
+
+			<script src="https://www.gstatic.com/firebasejs/3.2.1/firebase.js"></script>
+		
+			<div id="footer">
+				<div>
+					<span>123 St. City Location, Country | 987654321</span>
+					<p>
+						&copy; 2023 by Belle &amp; Carrie Rehabilitation Yoga. All rights reserved.
+					</p>
+		</div>
+		<div id="connect">
+			<a href="https://freewebsitetemplates.com/go/facebook/" id="facebook" target="_blank">Facebook</a>
+			<a href="https://freewebsitetemplates.com/go/twitter/" id="twitter" target="_blank">Twitter</a>
+			<a href="https://freewebsitetemplates.com/go/googleplus/" id="googleplus" target="_blank">Google&#43;</a>
+			<a href="https://freewebsitetemplates.com/go/pinterest/" id="pinterest" target="_blank">Pinterest</a>
+		</div>
+	</div>
+</body>
+</html>

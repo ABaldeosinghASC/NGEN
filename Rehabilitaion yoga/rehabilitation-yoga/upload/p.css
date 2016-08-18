@@ -1,0 +1,16 @@
+header{
+	text-align: center; 
+	font-size: 25px;
+	color: white;
+	background: rgba(0,0,0,0.5);
+}
+
+body{
+	background-image: url('http://i.imgur.com/gRynizr.gif');
+	background-size: cover;
+}
+
+
+a{
+	font-size: : 25px;
+}
